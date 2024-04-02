@@ -1,4 +1,4 @@
-// models/User.js
+
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
@@ -16,17 +16,10 @@ const userSchema = new mongoose.Schema({
     required: true
   },
   resume: {
-    type: String, // Assuming you store file paths or URLs
+    type: String,
     required: true,
-    // validate: {
-    //   validator: function(value) {
-    //     // Check if the file ends with '.pdf'
-    //     return value.endsWith('.pdf');
-    //   },
-    //   message: 'Only PDF files are allowed for resume uploads'
-    // }
   },
-  // You can add more fields as needed for user data
+  
 }, { timestamps: true });
 
 const Student = mongoose.model('Student', userSchema);

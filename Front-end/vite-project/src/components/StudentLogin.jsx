@@ -50,7 +50,7 @@ const StudentForm = () => {
       console.error(error);
     }
 
-    // Reset the form after submission
+  
     setName('');
     setEmail('');
     setContactNumber('');

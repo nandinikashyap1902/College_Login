@@ -1,4 +1,4 @@
-// models/UploadHistory.js
+
 const mongoose = require('mongoose');
 
 const uploadHistorySchema = new mongoose.Schema({
@@ -19,8 +19,7 @@ const uploadHistorySchema = new mongoose.Schema({
     type: String,
     required: true
   }
- 
-  // You can add more fields as needed (e.g., file name, file URL)
+
 }, { timestamps: true });
 
 const UploadHistory = mongoose.model('UploadHistory', uploadHistorySchema);

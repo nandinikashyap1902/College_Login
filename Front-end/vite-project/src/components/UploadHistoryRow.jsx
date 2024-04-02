@@ -1,4 +1,4 @@
-// UploadHistoryRow.jsx
+
 import axios from 'axios';
 import React from 'react';
 const apiUrl = import.meta.env.VITE_API_URL;
